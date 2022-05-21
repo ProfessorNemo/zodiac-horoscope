@@ -63,7 +63,7 @@ rescue SocketError => e
 end
 
 puts <<~HOROSCOPE
-  #{intro[:name]}:\n#{intro[:date]},\n#{intro[:head]}\n
+  #{intro[:name]}:\n#{intro[:date]},\n#{intro[:head]}
   #{definition['text']}\n
   #{prediction[:head]}:\n\n#{prediction[:forecast]}
 HOROSCOPE
