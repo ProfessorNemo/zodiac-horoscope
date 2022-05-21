@@ -61,5 +61,9 @@ rescue SocketError => e
   puts "Ошибка соединения с сервером: #{e.message}"
   abort e.message
 end
-puts "#{intro[:name]}:\n#{intro[:date]},\n#{intro[:head]}\n\n"
-puts "#{prediction[:head]}:\n\n#{prediction[:forecast]}"
+
+puts <<~HOROSCOPE
+  #{intro[:name]}:\n#{intro[:date]},\n#{intro[:head]}\n
+  #{definition['text']}\n
+  #{prediction[:head]}:\n\n#{prediction[:forecast]}
+HOROSCOPE
