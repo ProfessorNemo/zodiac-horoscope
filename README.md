@@ -13,7 +13,7 @@
 
 1. Перенесите содержимое данного репозитория на свой компьютер
 ```
-git remote add origin git@github.com:ProfessorNemo/astrological_forecast.git
+git clone git@github.com:ProfessorNemo/astrological_forecast.git
 ```
 2. Чтобы запустить приложение в этой же директории
 следует воспользоваться следующей командой:
